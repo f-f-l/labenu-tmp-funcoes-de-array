@@ -17,9 +17,18 @@ const recuperarVida = (obj) => {
 
 const pokemonsComVidaRecuperada = pokemons.map(recuperarVida)
 
+const pokemonsDeFogo = pokemons.filter((el) => {
+  return el.tipo === 'fogo'
+})
+
+const pokemonsDeFogoComVidaRecuperada = pokemonsComVidaRecuperada.filter(
+  (el) => {
+    return el.tipo === 'fogo'
+  }
+)
+
 console.log('\n(obj) = \n\n', pokemons)
 console.log('\n(novoObj) = \n\n', pokemonsComVidaRecuperada)
-
 console.log('\nLista original de pokémons:\n\n', pokemons)
 console.log('\nNova lista de pokémons:\n\n', pokemonsComVidaRecuperada)
 
@@ -33,19 +42,9 @@ console.log(
   pokemonsComVidaRecuperada[0]
 )
 
-const pokemonsDeFogo = pokemons.filter((el) => {
-  return el.tipo === 'fogo'
-})
-
 console.log('Pokémons do tipo fogo:\n\n', pokemonsDeFogo)
 console.log('Pokémon do tipo fogo na primeira posição:\n\n', pokemonsDeFogo[0])
 console.log('Pokémon do tipo fogo na segunda posição:\n\n', pokemonsDeFogo[1])
-
-const pokemonsDeFogoComVidaRecuperada = pokemonsComVidaRecuperada.filter(
-  (el) => {
-    return el.tipo === 'fogo'
-  }
-)
 
 console.log(
   'Pokémons do tipo fogo com a vida recuperada:\n\n',
