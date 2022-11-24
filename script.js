@@ -39,7 +39,7 @@ console.log(
 
 console.log(
   'Pokémon com vida recuperada na segunda posição:\n\n',
-  pokemonsComVidaRecuperada[0]
+  pokemonsComVidaRecuperada[1]
 )
 
 console.log('Pokémons do tipo fogo:\n\n', pokemonsDeFogo)
@@ -52,11 +52,11 @@ console.log(
 )
 
 console.log(
-  'Pokémon do tipo fogo na primeira posição:\n\n',
+  'Pokémon do tipo fogo com a vida recuperada na primeira posição:\n\n',
   pokemonsDeFogoComVidaRecuperada[0]
 )
 
 console.log(
-  'Pokémon do tipo fogo na segunda posição:\n\n',
+  'Pokémon do tipo fogo com a vida recuperada na segunda posição:\n\n',
   pokemonsDeFogoComVidaRecuperada[1]
 )
